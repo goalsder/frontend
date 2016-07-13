@@ -1,0 +1,99 @@
+<!doctype html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Goalsder</title>
+
+    <meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes"/>
+    <meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
+    <meta property="og:title" content="">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/angular-fancy-modal/dist/angular-fancy-modal.css">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext'
+          rel='stylesheet' type='text/css'>
+    <link rel="prefetch" href="images/zoom.png">
+
+
+</head>
+
+<body style="margin-top: 15%">
+    <div class="navbar navbar-fixed-top" data-activeslide="1">
+        <div class="container">
+
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav row">
+                    <li class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span
+                            class="icon icon-home"></span> <span class="text">HOME</span></a></li>
+                    <li class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span
+                            class="icon icon-user"></span> <span class="text">HOW IT WORK</span></a></li>
+                    <li class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span
+                            class="icon icon-briefcase"></span> <span class="text">CONTACTS</span></a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-2 active-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slide story" id="slide-1" data-slide="1">
+        <div class="container">
+            <div id="home-row-1" class="row clearfix">
+                <div class="col-12">
+
+                    <br>
+                    <br>
+                </div><!-- /col-12 -->
+            </div><!-- /row -->
+            <div class="row clearfix" ng-controller="StartupCtrl as startupCtrl">
+                <div class="col-12 col-sm-4" style="text-align: center; width: 25%">
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-default" ng-click="startupCtrl.openRegistrationForm()">Create goal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+    <!--ANGULAR-->
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="app.config.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="vendor/angular-fancy-modal/dist/angular-fancy-modal.js"></script>
+    <script src="startup/StartupCtrl.js"></script>
+    <script src="startup/startupService.js"></script>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="js/html5shiv.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+    <script src="js/script.js"></script>
+
+
+</html>
